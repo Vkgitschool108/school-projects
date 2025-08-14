@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: url("D:\Vaasav 10th inno\ca fe me nu.jfif") no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .menu-container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #444;
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        .item-name {
+            font-size: 1.2em;
+        }
+        .item-price {
+            font-size: 1.2em;
+            color: #FFD700; /* Gold color */
+        }
+        .item-description {
+            font-size: 0.9em;
+            color: #ccc;
+        }
+        @media (max-width: 600px) {
+            .menu-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .item-price {
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <h1>Cafe Menu</h1>
+        <div class="menu-item">
+            <div>
+                <div class="item-name">Espresso</div>
+                <div class="item-description">Rich and bold coffee shot.</div>
+            </div>
+            <div class="item-price">$3.00</div>
+        </div>
+        <div class="menu-item">
+            <div>
+                <div class="item-name">Cappuccino</div>
+                <div class="item-description">Espresso with steamed milk and foam.</div>
+            </div>
+            <div class="item-price">$4.50</div>
+        </div>
+        <div class="menu-item">
+            <div>
+                <div class="item-name">Latte</div>
+                <div class="item-description">Smooth espresso with creamy milk.</div>
+            </div>
+            <div class="item-price">$4.00</div>
+        </div>
+        <div class="menu-item">
+            <div>
+                <div class="item-name">Croissant</div>
+                <div class="item-description">Flaky and buttery pastry.</div>
+            </div>
+            <div class="item-price">$2.50</div>
+        </div>
+        <div class="menu-item">
+            <div>
+                <div class="item-name">Sandwich</div>
+                <div class="item-description">Freshly made with your choice of fillings.</div>
+            </div>
+            <div class="item-price">$5.00</div>
+        </div>
+        <div class="menu-item">
+            <div>
+                <div class="item-name">Chocolate Cake</div>
+                <div class="item-description">Decadent and rich chocolate cake.</div>
+            </div>
+            <div class="item-price">$3.50</div>
+        </div>
+    </div>
+</body>
+</html>
